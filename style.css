@@ -1,0 +1,50 @@
+
+/* input */
+
+#sem
+{
+    display: flex;
+}
+p
+{
+    margin: 5px;
+}
+.sem_class
+{
+    padding: 0px 15px;
+}
+
+#collector
+{
+    display: flex;
+}
+.data
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#act
+{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+#submit
+{
+    margin: 20px;
+}
+
+
+/* result */
+
+main
+{
+    display: flex;
+    text-align: start;
+}
+li
+{
+    list-style-type: none;
+}
