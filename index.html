@@ -7,174 +7,87 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>BSc. CSIT Result Calculator</h1>
-    <section id="select">
+    <h1 class="mainHead">BSc. CSIT 3rd sem Result Calculator</h1>
+    <!-- <section id="select">
         <div id="sem">
-            <p>Sem: </p>
-            <button class="sem_class" id="1">1</button>
-            <button class="sem_class" id="2">2</button>
-            <button class="sem_class" id="3">3</button>
-            <button class="sem_class" id="4">4</button>
-            <button class="sem_class" id="5">5</button>
-            <button class="sem_class" id="6">6</button>
-            <button class="sem_class" id="7">7</button>
-            <button class="sem_class" id="8">8</button>
+            <p>Semester:</p>
+            <button type="button" class="sem_class" id="1">1</button>
+            <button type="button" class="sem_class" id="2">2</button>
+            <button type="button" class="sem_class" id="3">3</button>
+            <button type="button" class="sem_class" id="4">4</button>
+            <button type="button" class="sem_class" id="5">5</button>
+            <button type="button" class="sem_class" id="6">6</button>
+            <button type="button" class="sem_class" id="7">7</button>
+            <button type="button" class="sem_class" id="8">8</button>
         </div>
-    </section>
+    </section> -->
 
 
     <section id="input">
        <div id="collector">
-            <!-- <div class="data">
-                <div class="input_head">S.N.</div>
-                <h2>1.</h2>
-                <h2>2.</h2>
-                <h2>3.</h2>
-                <h2>4.</h2>
-                <h2>5.</h2>
-                <h2>6.</h2>
-                <h2>7.</h2>
-            </div> -->
             <div id="roll_box" class="data">
                 <div class="input_head">Roll No.</div>
-                <input type="number" title="Enter the data" class="roll">
-                <input type="number" title="Enter the data" class="roll">
-                <input type="number" title="Enter the data" class="roll">
-                <input type="number" title="Enter the data" class="roll">
-                <input type="number" title="Enter the data" class="roll">
             </div>
             <div id="name_box" class="data">
                 <div class="input_head">Name</div>
-                <input title="Enter the data" class="name">
-                <input title="Enter the data" class="name">
-                <input title="Enter the data" class="name">
-                <input title="Enter the data" class="name">
-                <input title="Enter the data" class="name">
             </div>
             <div id="sub1" class="data">
                 <div class="input_head">DSA</div>
-                <input type="number" title="Enter the data" class="sub1">
-                <input type="number" title="Enter the data" class="sub1">
-                <input type="number" title="Enter the data" class="sub1">
-                <input type="number" title="Enter the data" class="sub1">
-                <input type="number" title="Enter the data" class="sub1">
             </div>
             <div id="sub2" class="data">
                 <div class="input_head">NM</div>
-                <input type="number" title="Enter the data" class="sub2">
-                <input type="number" title="Enter the data" class="sub2">
-                <input type="number" title="Enter the data" class="sub2">
-                <input type="number" title="Enter the data" class="sub2">
-                <input type="number" title="Enter the data" class="sub2">
             </div>
             <div id="sub3" class="data">
                 <div class="input_head">CA</div>
-                <input type="number" title="Enter the data" class="sub3">
-                <input type="number" title="Enter the data" class="sub3">
-                <input type="number" title="Enter the data" class="sub3">
-                <input type="number" title="Enter the data" class="sub3">
-                <input type="number" title="Enter the data" class="sub3">
             </div>
             <div id="sub4" class="data">
                 <div class="input_head">CG</div>
-                <input type="number" title="Enter the data" class="sub4">
-                <input type="number" title="Enter the data" class="sub4">
-                <input type="number" title="Enter the data" class="sub4">
-                <input type="number" title="Enter the data" class="sub4">
-                <input type="number" title="Enter the data" class="sub4">
             </div>
             <div id="sub5" class="data">
                 <div class="input_head">STAT II</div>
-                <input type="number" title="Enter the data" class="sub5">
-                <input type="number" title="Enter the data" class="sub5">
-                <input type="number" title="Enter the data" class="sub5">
-                <input type="number" title="Enter the data" class="sub5">
-                <input type="number" title="Enter the data" class="sub5">
             </div>
-            <div id="remove" class="data">
-                <div class="input_head">Remove</div>
-                <button type="button" class="delete" title="delete">Delete</button>
-                <button type="button" class="delete" title="delete">Delete</button>
-                <button type="button" class="delete" title="delete">Delete</button>
-                <button type="button" class="delete" title="delete">Delete</button>
-                <button type="button" class="delete" title="delete">Delete</button>
-            </div>
-       </div>
-       <div>
-            <div id="act">
-                <button onclick="add()">Add 1 row</button>
-                <p>No. of rows:</p>
-                <input type="number" title="students?" id="num">
-                <button onclick="addall()">Add</button>
-            </div>
-       </div>
-       <button id="submit">Publish Result</button>
+        </div>
+        <div>
+            <button type="button" class="" onclick="randommarks()">random marks</button>
+            <a href="#show">
+                <button class="" id="submit" onclick="publish()">Publish Result</button>
+            </a>
+        </div>
     </section>
 
 
     <section id="show">
-        <h1>Result</h1>
+        <h1 class="mainHead">Result</h1>
         <main>
-            <table>
-                <ul>
+            <!-- <table class="heads">
+                <ul id="rankShow">
                     <li>Rank</li>
-                    <li>1.</li>
-                    <li>2.</li>
-                    <li>3.</li>
-                    <li>4.</li>
-                    <li>5.</li>
-                    <li>6.</li>
-                    <li>7.</li>
                 </ul>
-            </table>
+            </table> -->
 
-            <table>
-                <ul>
-                    <li>Roll no.</li>
-                    <li>6.</li>
-                    <li>9.</li>
-                    <li>4.</li>
-                    <li>8.</li>
-                    <li>14.</li>
-                    <li>7.</li>
-                </ul>
-            </table>
+            <div>
+                <div class="heads" id="rollShow">
+                    <div class="hds">Roll no.</div>
+                </div>
+            </div>
 
-            <table>
-                <ul>
-                    <li>Name</li>
-                    <li>Sujan puri</li>
-                    <li>Ankit Khanal</li>
-                    <li>Hridayadev Dhungana</li>
-                    <li>Rohan Adhikari</li>
-                    <li>Prajina Adhikari</li>
-                    <li>6.</li>
-                </ul>
-            </table>
+            <div>
+                <div class="heads"   id="nameShow">
+                    <div class="hds">Name</div>
+                </div>
+            </div>
 
-            <table>
-                <ul>
-                    <li>Total</li>
-                    <li>2.</li>
-                    <li>3.</li>
-                    <li>4.</li>
-                    <li>5.</li>
-                    <li>6.</li>
-                    <li>7.</li>
-                </ul>
-            </table>
+            <div>
+                <div class="heads" id="totalShow">
+                    <div class="hds">Total</div>
+                </div>
+            </div>
 
-            <table>
-                <ul>
-                    <li>Result</li>
-                    <li>2.</li>
-                    <li>3.</li>
-                    <li>4.</li>
-                    <li>5.</li>
-                    <li>6.</li>
-                    <li>7.</li>
-                </ul>
-            </table>
+            <div>
+                <div class="heads" id="resultShow">
+                    <div class="hds">Percentage</div>
+                </div>
+            </div>
 
         </main>
     </section>

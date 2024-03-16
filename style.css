@@ -1,19 +1,46 @@
-
+*
+{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: rgb(221, 221, 221);
+}
 /* input */
 
-#sem
+.mainHead
+{
+    text-align: center;
+    font-size: 35px;
+    font-family: monospace;
+}
+
+/* #select
 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-p
+#sem
 {
-    margin: 5px;
+    margin: 20px;
+    display: flex;
 }
 .sem_class
 {
-    padding: 0px 15px;
-}
+    margin: 5px;
+    padding: 5px 15px;
+} */
 
+/* section input */
+
+#input
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #collector
 {
     display: flex;
@@ -22,14 +49,33 @@ p
 {
     display: flex;
     flex-direction: column;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid white;
+}
+.input_head
+{
+    padding-left: 5px;
+}
+#sub1, #sub2, #sub3, #sub4, #sub5
+{
+    width: 100px;
 }
 
-#act
+#roll_box
+{
+    width: 75px;
+}
+
+
+/* #act
 {
     display: flex;
     flex-direction: row;
     margin: 5px;
-}
+} */
 
 #submit
 {
@@ -43,12 +89,31 @@ p
 
 /* result */
 
+#show
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main
 {
     display: flex;
-    text-align: start;
+    justify-content: space-evenly;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px; 
+    width: 500px;
+    margin: 20px;
 }
-li
+
+.heads
 {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+.hds
+{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 7px 0px;
 }
